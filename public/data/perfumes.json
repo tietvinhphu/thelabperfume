@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Chanel No. 5",
+    "brand": "Chanel",
+    "year": 1921,
+    "family": "Floral Aldehyde",
+    "description": "A timeless classic with a complex floral bouquet and powdery aldehydic notes.",
+    "topNotes": ["Aldehydes", "Ylang-Ylang", "Neroli", "Bergamot", "Lemon"],
+    "middleNotes": ["Iris", "Jasmine", "Rose", "Orris Root", "Lily of the Valley"],
+    "baseNotes": ["Sandalwood", "Vanilla", "Amber", "Patchouli", "Musk"],
+    "image": "/images/perfumes/chanel-no5.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sauvage",
+    "brand": "Dior",
+    "year": 2015,
+    "family": "Aromatic Fougère",
+    "description": "A fresh and spicy fragrance inspired by wide-open spaces and blue sky.",
+    "topNotes": ["Calabrian Bergamot", "Pepper"],
+    "middleNotes": ["Sichuan Pepper", "Lavender", "Pink Pepper", "Vetiver", "Patchouli", "Geranium", "Elemi"],
+    "baseNotes": ["Ambroxan", "Cedar", "Labdanum"],
+    "image": "/images/perfumes/dior-sauvage.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Aventus",
+    "brand": "Creed",
+    "year": 2010,
+    "family": "Fruity Chypre",
+    "description": "A sophisticated blend inspired by the dramatic life of a historic emperor.",
+    "topNotes": ["Pineapple", "Bergamot", "Black Currant", "Apple"],
+    "middleNotes": ["Birch", "Patchouli", "Moroccan Jasmine", "Rose"],
+    "baseNotes": ["Musk", "Oak Moss", "Ambergris", "Vanilla"],
+    "image": "/images/perfumes/creed-aventus.jpg"
+  }
+]

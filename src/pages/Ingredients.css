@@ -1,0 +1,21 @@
+.ingredients {
+  padding: 3rem 0;
+}
+
+.ingredients h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ingredients > .container > p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.ingredients-content {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Bergamot",
+    "category": "Citrus",
+    "description": "A citrus fruit that provides fresh, sparkling top notes with a slightly spicy character.",
+    "origin": "Italy, Calabria",
+    "scentProfile": "Fresh, Citrus, Bright, Slightly Bitter",
+    "image": "/images/ingredients/bergamot.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jasmine",
+    "category": "Floral",
+    "description": "One of the most precious flowers in perfumery, offering rich, sweet, and intoxicating floral notes.",
+    "origin": "India, Egypt, France",
+    "scentProfile": "Floral, Sweet, Sensual, Exotic",
+    "image": "/images/ingredients/jasmine.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sandalwood",
+    "category": "Woody",
+    "description": "A precious wood that provides warm, creamy, and smooth base notes.",
+    "origin": "India, Australia",
+    "scentProfile": "Woody, Creamy, Warm, Soft",
+    "image": "/images/ingredients/sandalwood.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Vanilla",
+    "category": "Gourmand",
+    "description": "A sweet, comforting note extracted from vanilla pods, adding warmth and sweetness.",
+    "origin": "Madagascar, Tahiti, Mexico",
+    "scentProfile": "Sweet, Creamy, Warm, Comforting",
+    "image": "/images/ingredients/vanilla.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Patchouli",
+    "category": "Earthy",
+    "description": "An earthy, rich note with woody and slightly sweet undertones.",
+    "origin": "Indonesia, India",
+    "scentProfile": "Earthy, Woody, Sweet, Spicy",
+    "image": "/images/ingredients/patchouli.jpg"
+  }
+]
