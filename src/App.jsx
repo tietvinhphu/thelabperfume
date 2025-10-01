@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Browse from './pages/Browse'
 import PerfumeDetail from './pages/PerfumeDetail'
 import Ingredients from './pages/Ingredients'
+import ScentProfile from './pages/ScentProfile'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/browse" element={<Browse />} />
             <Route path="/perfume/:id" element={<PerfumeDetail />} />
             <Route path="/ingredients" element={<Ingredients />} />
+            <Route path="/scent-profile" element={<ScentProfile />} />
           </Routes>
         </main>
         <Footer />

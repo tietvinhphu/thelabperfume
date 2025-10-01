@@ -13,6 +13,7 @@ function Header() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/browse">Browse</Link></li>
             <li><Link to="/ingredients">Ingredients</Link></li>
+            <li><Link to="/scent-profile">Profile</Link></li>
           </ul>
         </nav>
       </div>

@@ -1,0 +1,180 @@
+.scent-profile {
+  padding: 3rem 0;
+  min-height: 80vh;
+}
+
+.scent-profile h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.scent-profile > .container > p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.profile-steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.step {
+  padding: 0.75rem 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.step.active {
+  background-color: #667eea;
+  color: white;
+}
+
+.profile-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section-description {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.preference-group {
+  margin-bottom: 2.5rem;
+}
+
+.preference-group h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.options-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.option-btn {
+  padding: 1rem 1.5rem;
+  background-color: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #495057;
+}
+
+.option-btn:hover {
+  border-color: #667eea;
+  background-color: #fff;
+}
+
+.option-btn.selected {
+  background-color: #667eea;
+  border-color: #667eea;
+  color: white;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.profile-actions .btn {
+  flex: 1;
+  max-width: 200px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scent-profile {
+    padding: 2rem 0;
+  }
+
+  .scent-profile h1 {
+    font-size: 2rem;
+  }
+
+  .profile-steps {
+    gap: 0.5rem;
+  }
+
+  .step {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .profile-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .options-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .option-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .profile-actions .btn {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .options-row {
+    flex-direction: column;
+  }
+
+  .option-btn {
+    width: 100%;
+  }
+}
