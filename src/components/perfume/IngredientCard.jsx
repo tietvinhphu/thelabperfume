@@ -4,8 +4,8 @@ function IngredientCard({ ingredient }) {
   return (
     <div className="ingredient-card">
       <div className="ingredient-card-image">
-        {ingredient.image ? (
-          <img src={ingredient.image} alt={ingredient.name} />
+        {ingredient.image_url ? (
+          <img src={ingredient.image_url} alt={ingredient.name} />
         ) : (
           <div className="placeholder-image">🌿</div>
         )}

@@ -60,8 +60,8 @@ function PerfumeDetail() {
 
         <div className="detail-content">
           <div className="detail-image">
-            {perfume.image ? (
-              <img src={perfume.image} alt={perfume.name} />
+            {perfume.image_url ? (
+              <img src={perfume.image_url} alt={perfume.name} />
             ) : (
               <div className="placeholder-image">🧪</div>
             )}

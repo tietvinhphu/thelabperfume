@@ -5,8 +5,8 @@ function PerfumeCard({ perfume }) {
   return (
     <Link to={`/perfume/${perfume.id}`} className="perfume-card">
       <div className="perfume-card-image">
-        {perfume.image ? (
-          <img src={perfume.image} alt={perfume.name} />
+        {perfume.image_url ? (
+          <img src={perfume.image_url} alt={perfume.name} />
         ) : (
           <div className="placeholder-image">🧪</div>
         )}

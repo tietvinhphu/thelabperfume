@@ -20,15 +20,46 @@ export const perfumeService = {
     return data
   },
 
-  // Get perfume by ID
+  // Get perfume by ID with ingredients
   async getPerfumeById(id) {
     const { data, error } = await supabase
       .from('perfumes')
-      .select('*')
+      .select(`
+        *,
+        perfume_ingredients (
+          note_type,
+          intensity,
+          ingredient:ingredients (
+            id,
+            name,
+            category
+          )
+        )
+      `)
       .eq('id', id)
       .single()
 
     if (error) throw error
+
+    // Transform data to match expected format
+    if (data && data.perfume_ingredients) {
+      const topNotes = []
+      const middleNotes = []
+      const baseNotes = []
+
+      data.perfume_ingredients.forEach(pi => {
+        const ingredientName = pi.ingredient.name
+        if (pi.note_type === 'top') topNotes.push(ingredientName)
+        else if (pi.note_type === 'middle') middleNotes.push(ingredientName)
+        else if (pi.note_type === 'base') baseNotes.push(ingredientName)
+      })
+
+      data.top_notes = topNotes
+      data.middle_notes = middleNotes
+      data.base_notes = baseNotes
+      data.ingredients = data.perfume_ingredients.map(pi => pi.ingredient)
+    }
+
     return data
   },
 
