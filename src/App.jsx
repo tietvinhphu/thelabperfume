@@ -7,7 +7,6 @@ import PerfumeDetail from './pages/PerfumeDetail'
 import Ingredients from './pages/Ingredients'
 import ScentProfile from './pages/ScentProfile'
 import CreatePerfume from './pages/CreatePerfume'
-import QuickAdd from './pages/QuickAdd'
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
             <Route path="/ingredients" element={<Ingredients />} />
             <Route path="/scent-profile" element={<ScentProfile />} />
             <Route path="/admin/create-perfume" element={<CreatePerfume />} />
-            <Route path="/admin/quick-add" element={<QuickAdd />} />
           </Routes>
         </main>
         <Footer />
