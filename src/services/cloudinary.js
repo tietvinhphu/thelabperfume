@@ -35,7 +35,9 @@ export const uploadImage = async (file, folder = 'perfumes') => {
     )
 
     if (!response.ok) {
-      throw new Error('Upload failed')
+      const errorData = await response.json()
+      console.error('Cloudinary error details:', errorData)
+      throw new Error(errorData.error?.message || 'Upload failed')
     }
 
     const data = await response.json()
