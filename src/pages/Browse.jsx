@@ -88,13 +88,13 @@ function Browse() {
   return (
     <div className="browse">
       <div className="container">
-        <h1>Browse Perfumes</h1>
-        <p>Explore our collection of fragrances</p>
+        <h1>Khám Phá Nước Hoa</h1>
+        <p>Khám phá bộ sưu tập hương thơm của chúng tôi</p>
 
         <div className="browse-filters">
           <input
             type="text"
-            placeholder="Search by name or brand..."
+            placeholder="Tìm kiếm theo tên hoặc thương hiệu..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="search-input"
@@ -107,7 +107,7 @@ function Browse() {
           >
             {families.map(family => (
               <option key={family} value={family}>
-                {family === 'all' ? 'All Families' : family}
+                {family === 'all' ? 'Tất Cả Dòng Hương' : family}
               </option>
             ))}
           </select>
@@ -117,16 +117,16 @@ function Browse() {
             onChange={(e) => setSortBy(e.target.value)}
             className="sort-filter"
           >
-            <option value="name">Sort by Name</option>
-            <option value="brand">Sort by Brand</option>
-            <option value="year-new">Newest First</option>
-            <option value="year-old">Oldest First</option>
+            <option value="name">Sắp Xếp Theo Tên</option>
+            <option value="brand">Sắp Xếp Theo Thương Hiệu</option>
+            <option value="year-new">Mới Nhất Trước</option>
+            <option value="year-old">Cũ Nhất Trước</option>
           </select>
         </div>
 
         <div className="browse-results">
           <p className="results-count">
-            {filteredPerfumes.length} {filteredPerfumes.length === 1 ? 'perfume' : 'perfumes'} found
+            Tìm thấy {filteredPerfumes.length} {filteredPerfumes.length === 1 ? 'nước hoa' : 'nước hoa'}
           </p>
         </div>
 
@@ -137,7 +137,7 @@ function Browse() {
         )}
 
         {loading ? (
-          <div className="loading">Loading perfumes...</div>
+          <div className="loading">Đang tải nước hoa...</div>
         ) : (
           <>
             <div className="perfumes-grid">
@@ -147,7 +147,7 @@ function Browse() {
                 ))
               ) : (
                 <div className="no-results">
-                  <p>No perfumes found matching your criteria.</p>
+                  <p>Không tìm thấy nước hoa nào phù hợp với tiêu chí của bạn.</p>
                 </div>
               )}
             </div>
@@ -159,7 +159,7 @@ function Browse() {
                   disabled={currentPage === 1}
                   className="pagination-btn"
                 >
-                  Previous
+                  Trước
                 </button>
 
                 <div className="pagination-numbers">
@@ -179,7 +179,7 @@ function Browse() {
                   disabled={currentPage === totalPages}
                   className="pagination-btn"
                 >
-                  Next
+                  Sau
                 </button>
               </div>
             )}

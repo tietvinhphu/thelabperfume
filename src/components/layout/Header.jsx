@@ -10,10 +10,10 @@ function Header() {
             <h1>The Lab Perfume 🧪</h1>
           </Link>
           <ul className="nav-menu">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/browse">Browse</Link></li>
-            <li><Link to="/ingredients">Ingredients</Link></li>
-            <li><Link to="/scent-profile">Profile</Link></li>
+            <li><Link to="/">Trang Chủ</Link></li>
+            <li><Link to="/browse">Khám Phá</Link></li>
+            <li><Link to="/ingredients">Nguyên Liệu</Link></li>
+            <li><Link to="/scent-profile">Hồ Sơ</Link></li>
           </ul>
         </nav>
       </div>

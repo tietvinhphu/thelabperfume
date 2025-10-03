@@ -10,9 +10,10 @@ function Home() {
   const [loading, setLoading] = useState(true)
 
   const heroImages = [
-    'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759379175/perfumes/hummge7h7xaytgryiigd.webp',
+    'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759505489/e2cver7lpqpljjixpu3u.jpg',
     'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759502858/xtiareii8g4u2dpsqivj.webp',
-    'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759502965/ncldkowjyykjv4a8oo3n.avif'
+    'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759502965/ncldkowjyykjv4a8oo3n.avif',
+    'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759505102/x5lmlttjdhsopecxpung.jpg'
   ]
 
   useEffect(() => {
@@ -63,10 +64,10 @@ function Home() {
 
         <div className="hero-content">
           <div className="container">
-            <h1 className="hero-title">Discover Luxury Fragrances</h1>
-            <p className="hero-subtitle">A curated encyclopedia of fine perfumery</p>
+            <h1 className="hero-title">Khám Phá Nước Hoa Cao Cấp</h1>
+            <p className="hero-subtitle">Bách khoa toàn thư về nước hoa tinh tế</p>
             <Link to="/browse" className="btn btn-primary">
-              Explore Collection
+              Khám Phá Bộ Sưu Tập
             </Link>
           </div>
         </div>
@@ -87,12 +88,12 @@ function Home() {
       <section className="featured-perfumes">
         <div className="container">
           <div className="section-header">
-            <h2>Featured Collection</h2>
-            <p>Discover our most exquisite fragrances</p>
+            <h2>Bộ Sưu Tập Nổi Bật</h2>
+            <p>Khám phá những mùi hương tinh tế nhất</p>
           </div>
 
           {loading ? (
-            <div className="loading">Loading perfumes...</div>
+            <div className="loading">Đang tải nước hoa...</div>
           ) : (
             <div className="perfumes-grid">
               {featuredPerfumes.map((perfume) => (
@@ -103,7 +104,7 @@ function Home() {
 
           <div className="section-cta">
             <Link to="/browse" className="btn btn-secondary">
-              View All Fragrances
+              Xem Tất Cả Nước Hoa
             </Link>
           </div>
         </div>
@@ -114,25 +115,25 @@ function Home() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>The Art of Perfumery</h2>
+              <h2>Nghệ Thuật Chế Tác Nước Hoa</h2>
               <p>
-                Immerse yourself in the world of luxury fragrances. Our curated collection
-                brings together the finest scents from renowned perfume houses and emerging
-                artisans, each telling a unique olfactory story.
+                Đắm mình trong thế giới nước hoa cao cấp. Bộ sưu tập được tuyển chọn của chúng tôi
+                tập hợp những mùi hương tinh tế nhất từ các nhà chế tác nước hoa nổi tiếng và những
+                nghệ nhân mới nổi, mỗi chai kể một câu chuyện khứu giác độc đáo.
               </p>
               <p>
-                From the delicate notes of rare florals to the deep warmth of precious woods,
-                explore an encyclopedia of scents that captures the essence of elegance and
-                sophistication.
+                Từ những nốt hương hoa tinh tế đến hơi ấm sâu lắng của gỗ quý hiếm,
+                khám phá bách khoa toàn thư về hương thơm, nơi tinh hoa của sự thanh lịch
+                và sang trọng được lưu giữ.
               </p>
               <Link to="/ingredients" className="btn btn-primary">
-                Discover Ingredients
+                Khám Phá Nguyên Liệu
               </Link>
             </div>
             <div className="about-image">
               <img
                 src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80"
-                alt="Perfume bottles"
+                alt="Chai nước hoa"
               />
             </div>
           </div>
@@ -142,14 +143,14 @@ function Home() {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <h2>Begin Your Fragrance Journey</h2>
-          <p>Explore our complete collection of luxury perfumes</p>
+          <h2>Bắt Đầu Hành Trình Hương Thơm</h2>
+          <p>Khám phá bộ sưu tập nước hoa cao cấp hoàn chỉnh của chúng tôi</p>
           <div className="cta-buttons">
             <Link to="/browse" className="btn btn-primary">
-              Browse All Perfumes
+              Xem Tất Cả Nước Hoa
             </Link>
             <Link to="/create" className="btn btn-secondary">
-              Add New Perfume
+              Thêm Nước Hoa Mới
             </Link>
           </div>
         </div>
