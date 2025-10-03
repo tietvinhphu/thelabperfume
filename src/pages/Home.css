@@ -1,14 +1,15 @@
-/* Hero Section - Jo Malone Inspired */
+/* Hero Section - Full Width Luxury */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 700px;
+  height: 85vh;
+  min-height: 600px;
+  max-height: 800px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fcf9ee;
+  background-color: #000;
 }
 
 /* Slideshow Container */
@@ -38,7 +39,7 @@
 
 .hero-slide.active {
   opacity: 1;
-  transform: scale(1.05); /* Ken Burns effect - subtle zoom */
+  transform: scale(1.08);
 }
 
 /* Elegant Overlay */
@@ -50,8 +51,8 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(252, 249, 238, 0.3) 0%,
-    rgba(41, 41, 41, 0.4) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 100%
   );
   z-index: 2;
 }
@@ -62,94 +63,64 @@
   z-index: 3;
   text-align: center;
   padding: 3rem 2rem;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .hero-title {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
   font-weight: 300;
-  letter-spacing: 0.05em;
-  color: #292929;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-family: 'Georgia', 'Times New Roman', serif;
-  text-shadow: 0 2px 10px rgba(252, 249, 238, 0.8);
+  line-height: 1.2;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #292929;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  text-shadow: 0 1px 5px rgba(252, 249, 238, 0.8);
-}
-
-.hero-description {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 2.5rem;
-  color: #4a4a4a;
+  color: #f5f5f5;
   font-weight: 300;
-  letter-spacing: 0.02em;
-  text-shadow: 0 1px 3px rgba(252, 249, 238, 0.6);
+  letter-spacing: 0.05em;
 }
 
-/* CTA Buttons - Elegant Style */
-.cta-buttons {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.cta-buttons .btn {
-  padding: 1rem 2.5rem;
-  font-size: 0.95rem;
+/* Hero Button */
+.hero-content .btn {
+  padding: 1.1rem 3rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  border: 2px solid #292929;
+  border: 2px solid #fff;
   background: transparent;
-  color: #292929;
-  transition: all 0.3s ease;
+  color: #fff;
+  transition: all 0.4s ease;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
 }
 
-.cta-buttons .btn-primary {
-  background-color: #292929;
-  color: #fcf9ee;
+.hero-content .btn-primary {
+  background-color: #fff;
+  color: #000;
 }
 
-.cta-buttons .btn-primary:hover {
+.hero-content .btn-primary:hover {
   background-color: transparent;
-  color: #292929;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(41, 41, 41, 0.2);
-}
-
-.cta-buttons .btn-secondary {
-  background-color: transparent;
-  color: #292929;
-}
-
-.cta-buttons .btn-secondary:hover {
-  background-color: #292929;
-  color: #fcf9ee;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(41, 41, 41, 0.2);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Slide Indicators */
 .slide-indicators {
   position: absolute;
-  bottom: 2rem;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 0.75rem;
+  gap: 0.7rem;
   z-index: 4;
 }
 
@@ -157,7 +128,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 2px solid #292929;
+  border: 2px solid #fff;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -165,79 +136,249 @@
 }
 
 .slide-indicators .indicator.active {
-  background-color: #292929;
+  background-color: #fff;
   transform: scale(1.2);
 }
 
 .slide-indicators .indicator:hover {
-  background-color: #4a4a4a;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Featured Section - Elegant Style */
-.featured {
-  padding: 5rem 0;
+/* Featured Perfumes Section */
+.featured-perfumes {
+  padding: 6rem 0;
+  background-color: var(--color-cream);
+}
+
+.section-header {
   text-align: center;
-  background-color: #fcf9ee;
+  margin-bottom: 4rem;
 }
 
-.featured h2 {
-  font-size: 2.5rem;
+.section-header h2 {
+  font-size: 2.8rem;
   margin-bottom: 1rem;
-  color: #292929;
+  color: var(--color-black);
   font-weight: 300;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-.featured p {
+.section-header p {
   font-size: 1.1rem;
-  color: #4a4a4a;
+  color: var(--color-gray);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.perfumes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.1rem;
+  color: var(--color-gray);
+}
+
+/* About Section */
+.about-section {
+  padding: 6rem 0;
+  background-color: #fff;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-black);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-gray);
+  margin-bottom: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.02em;
 }
 
+.about-text .btn {
+  margin-top: 1rem;
+}
+
+.about-image {
+  overflow: hidden;
+  border: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 6rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-black) 0%, #1a1a1a 100%);
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #f5f5f5;
+}
+
+.cta-section .cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-section .btn {
+  padding: 1.1rem 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cta-section .btn-primary {
+  background-color: #fff;
+  color: #000;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: transparent;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.cta-section .btn-secondary {
+  background-color: transparent;
+  color: #fff;
+}
+
+.cta-section .btn-secondary:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
 /* Responsive Design */
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image {
+    order: -1;
+    max-height: 400px;
+  }
+
+  .perfumes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
-    height: 85vh;
-    min-height: 600px;
+    height: 70vh;
+    min-height: 500px;
+    max-height: 650px;
   }
 
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
-  .hero-description {
-    font-size: 1rem;
-  }
-
-  .cta-buttons .btn {
-    padding: 0.9rem 2rem;
+  .hero-content .btn {
+    padding: 1rem 2.5rem;
     font-size: 0.85rem;
   }
 
-  .featured {
-    padding: 3.5rem 1rem;
+  .section-header h2 {
+    font-size: 2.2rem;
   }
 
-  .featured h2 {
+  .about-text h2 {
     font-size: 2rem;
   }
 
-  .featured p {
-    font-size: 1rem;
+  .cta-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .featured-perfumes,
+  .about-section,
+  .cta-section {
+    padding: 4rem 1rem;
+  }
+
+  .perfumes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    height: 75vh;
-    min-height: 500px;
+    height: 65vh;
+    min-height: 450px;
   }
 
   .hero-content {
@@ -245,43 +386,55 @@
   }
 
   .hero-title {
-    font-size: 2.2rem;
-    letter-spacing: 0.03em;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
   }
 
   .hero-subtitle {
     font-size: 1rem;
-  }
-
-  .hero-description {
-    font-size: 0.9rem;
     margin-bottom: 2rem;
   }
 
-  .cta-buttons {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .cta-buttons .btn {
-    width: 100%;
-    padding: 1rem 2rem;
+  .hero-content .btn {
+    width: 90%;
+    padding: 0.95rem 2rem;
   }
 
   .slide-indicators {
     bottom: 1.5rem;
   }
 
-  .slide-indicators .indicator {
-    width: 8px;
-    height: 8px;
+  .section-header h2 {
+    font-size: 1.8rem;
   }
 
-  .featured {
-    padding: 3rem 1rem;
+  .section-header p {
+    font-size: 1rem;
   }
 
-  .featured h2 {
-    font-size: 1.75rem;
+  .perfumes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-section .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-section .btn {
+    width: 90%;
   }
 }
