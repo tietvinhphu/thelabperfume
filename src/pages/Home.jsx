@@ -62,25 +62,20 @@ function Home() {
 
         <div className="hero-overlay"></div>
 
-        <div className="hero-content">
-          <div className="container">
-            <h1 className="hero-title">Khám Phá Nước Hoa Cao Cấp</h1>
-            <p className="hero-subtitle">Bách khoa toàn thư về nước hoa tinh tế</p>
-            <Link to="/browse" className="btn btn-primary">
-              Khám Phá Bộ Sưu Tập
-            </Link>
+        <div className="hero-bottom">
+          <div className="slide-indicators">
+            {heroImages.map((_, index) => (
+              <button
+                key={index}
+                className={`indicator ${index === currentSlide ? 'active' : ''}`}
+                onClick={() => setCurrentSlide(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
           </div>
-        </div>
-
-        <div className="slide-indicators">
-          {heroImages.map((_, index) => (
-            <button
-              key={index}
-              className={`indicator ${index === currentSlide ? 'active' : ''}`}
-              onClick={() => setCurrentSlide(index)}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
+          <Link to="/browse" className="btn btn-primary hero-cta">
+            Khám Phá Bộ Sưu Tập
+          </Link>
         </div>
       </section>
 

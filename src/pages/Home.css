@@ -131,15 +131,23 @@
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* Hero Bottom Section */
+.hero-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 /* Slide Indicators */
 .slide-indicators {
-  position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 0.7rem;
-  z-index: 4;
 }
 
 .slide-indicators .indicator {
@@ -160,6 +168,29 @@
 
 .slide-indicators .indicator:hover {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Hero CTA Button */
+.hero-cta {
+  padding: 1.1rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hero-cta:hover {
+  background-color: transparent;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Featured Perfumes Section */
@@ -402,13 +433,15 @@
     margin-bottom: 2rem;
   }
 
-  .hero-content .btn {
-    width: 90%;
-    padding: 0.95rem 2rem;
+  .hero-bottom {
+    bottom: 1rem;
+    gap: 1rem;
   }
 
-  .slide-indicators {
-    bottom: 1.5rem;
+  .hero-cta {
+    width: 90%;
+    padding: 0.95rem 2rem;
+    font-size: 0.8rem;
   }
 
   .section-header h2 {
