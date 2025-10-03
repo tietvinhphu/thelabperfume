@@ -11,7 +11,7 @@ function Home() {
 
   const heroImages = [
     'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759505489/e2cver7lpqpljjixpu3u.jpg',
-    'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759502858/xtiareii8g4u2dpsqivj.webp',
+    'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759508026/in8z7nvjnjms5swftfcm.png',
     'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759502965/ncldkowjyykjv4a8oo3n.avif',
     'https://res.cloudinary.com/dt7b6ovud/image/upload/v1759505102/x5lmlttjdhsopecxpung.jpg'
   ]
