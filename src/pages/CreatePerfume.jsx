@@ -9,6 +9,9 @@ export default function CreatePerfume() {
     brand: '',
     year: '',
     family: '',
+    concentration: '',
+    gender: '',
+    price: '',
     description: '',
     image_url: '',
     cloudinary_public_id: ''
@@ -61,6 +64,9 @@ export default function CreatePerfume() {
           brand: formData.brand,
           year: formData.year ? parseInt(formData.year) : null,
           family: formData.family,
+          concentration: formData.concentration,
+          gender: formData.gender,
+          price: formData.price ? parseFloat(formData.price) : null,
           description: formData.description,
           image_url: formData.image_url,              // ← Cloudinary URL
           cloudinary_public_id: formData.cloudinary_public_id  // ← For future edits/deletes
@@ -79,6 +85,9 @@ export default function CreatePerfume() {
         brand: '',
         year: '',
         family: '',
+        concentration: '',
+        gender: '',
+        price: '',
         description: '',
         image_url: '',
         cloudinary_public_id: ''
@@ -180,6 +189,54 @@ export default function CreatePerfume() {
                   <option value="Chypre">Chypre</option>
                 </select>
               </div>
+            </div>
+
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="concentration">Concentration</label>
+                <select
+                  id="concentration"
+                  name="concentration"
+                  value={formData.concentration}
+                  onChange={handleChange}
+                >
+                  <option value="">Select concentration</option>
+                  <option value="Parfum">Parfum (20-30%)</option>
+                  <option value="EDP">Eau de Parfum (15-20%)</option>
+                  <option value="EDT">Eau de Toilette (5-15%)</option>
+                  <option value="EDC">Eau de Cologne (2-4%)</option>
+                  <option value="Extrait">Extrait de Parfum (15-40%)</option>
+                </select>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="gender">Gender</label>
+                <select
+                  id="gender"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                >
+                  <option value="">Select gender</option>
+                  <option value="Unisex">Unisex</option>
+                  <option value="Men">Men</option>
+                  <option value="Women">Women</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="price">Price (USD)</label>
+              <input
+                type="number"
+                id="price"
+                name="price"
+                value={formData.price}
+                onChange={handleChange}
+                placeholder="e.g. 120.00"
+                min="0"
+                step="0.01"
+              />
             </div>
 
             <div className="form-group">
